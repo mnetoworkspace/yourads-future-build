@@ -1,5 +1,5 @@
 import logo from "@/assets/yourads-logo.png";
-import { Mail } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -36,6 +36,15 @@ export function Footer() {
           <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">Contato</div>
           <a href="mailto:youradsbrasil@gmail.com" className="mt-4 inline-flex items-center gap-2 text-sm hover:text-primary transition">
             <Mail className="size-4" /> youradsbrasil@gmail.com
+          </a>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Av.+Raul+Lopes,+1905,+Teresina,+Piauí,+64049-548"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex items-start gap-2 text-sm text-muted-foreground hover:text-primary transition"
+          >
+            <MapPin className="size-4 shrink-0 mt-0.5" />
+            <span>Av. Raul Lopes, 1905<br />CEP 64049-548 · Teresina – PI</span>
           </a>
           <p className="mt-4 text-xs text-muted-foreground">
             CNPJ 42.711.070/0001-06<br />
