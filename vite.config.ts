@@ -6,4 +6,17 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig();
+const port = process.env.PORT ? parseInt(process.env.PORT) : 3000;
+
+export default defineConfig({
+  vite: {
+    server: {
+      host: "0.0.0.0",
+      port,
+    },
+    preview: {
+      host: "0.0.0.0",
+      port,
+    },
+  },
+});
